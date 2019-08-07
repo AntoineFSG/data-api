@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calling APIs</title>
+    <!-- Chart.css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+    <!-- Chart.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+    <!-- leaflet.css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <!-- leaflet.js-->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+    <!--Font import-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!--custom css -->
+    <link rel="stylesheet" href="css/API-examples.css"/>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>API USE EXAMPLES</h1>
+      <h2>Global Warming Data Graphic since 1880</h2>
+      <div class="global-warming-canvas-container">
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <p id='data-source'>Data from :https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv</p>
+        <p class="credit">Graphed with Chart.js</p>
+      </div>
+      <h2>Getting the ISS position in real time</h2>
+      <div class="iss-position-container">
+        <div class="lat-long-container">
+          <p id="latitude"></p>
+          <p id="longitude"></p>
+        </div>
+        <div id="iss-map"></div>
+        <p id='data-source'>Data from : https://api.wheretheiss.at/v1/satellites/25544</p>
+        <p class="credit">Mapped with leaflet.js</p>
+      </div>
+    </div>
+    <script src="./globalWarming.js"></script>
+    <script src="./whereIsTheIss.js"></script>
+    </script>
+  </body>
+</html>

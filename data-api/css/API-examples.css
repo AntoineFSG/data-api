@@ -1,0 +1,49 @@
+/*Global warming Graph positioning*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+* > h2 {
+  font-weight: 300;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+#data-source {
+  font-weight: 300;
+  font-style: italic;
+  float: right;
+}
+p.credit {
+  font-family: "Raleway", sans-serif;
+  margin-left: 1.85rem;
+}
+.global-warming-canvas-container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*Leaflet container restriction - mandatory*/
+#iss-map {
+  height: 360px;
+  width: 540px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.iss-position-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.lat-long-container {
+  width: 50%;
+  background: silver;
+  opacity: 0.5;
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+}
