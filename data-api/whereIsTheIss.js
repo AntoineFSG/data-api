@@ -10,6 +10,7 @@ L.tileLayer(
     minZoom: 1,
     id: "mapbox.streets",
     accessToken:
+      //this access token won't work, replace it by yours
       "pk.eyJ1IjoiYW50b2luZWZzZyIsImEiOiJjanowOTJnN2EwOWhtM2dtcjI3ODI4YXplIn0.sltpQmpgm-ZfV4cdeE_zYg"
   }
 ).addTo(mymap);
